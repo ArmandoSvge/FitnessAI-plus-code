@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Encabezado de la página -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="FitnessAI+"
+        android:textSize="24sp" />
+
+    <!-- Contenedor de contenido principal (puedes agregar aquí elementos relacionados con el fitness) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical"> <!-- Margen alrededor del contenido principal -->
+
+        <!-- Título para la sección de Fitness -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrisBonito"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"
+            android:text="COACH PERSONAL"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Imagen de un entrenador o actividad física -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Imagen de entrenamiento"
+            android:scaleType="centerCrop"
+            android:src="@drawable/Logo" />
+
+        <!-- Descripción o título de la actividad física -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Ejercicio de Cardio"
+            android:textSize="16sp" />
+
+        <!-- Botón para comenzar el entrenamiento con su ID -->
+    </LinearLayout>
+
+    <!-- Espacio para simular un chat con una IA -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#DDDDDD" />
+
+    <!-- Contenedor para el chat con la IA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorGrisBonito"
+        android:orientation="vertical">
+
+        <!-- Vista de chat con la IA (puedes personalizarla con un RecyclerView, por ejemplo) -->
+
+        <!-- Mensaje de la IA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorbgrChat"
+            android:padding="8dp"
+            android:text="Hola, ¿en qué puedo ayudarte?" />
+
+        <!-- Tu mensaje -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorbgrChat"
+            android:padding="8dp"
+            android:text="Me gustaría una rutina de ejercicios." />
+
+        <!-- Botón para comenzar el entrenamiento con su ID -->
+        <Button
+            android:id="@+id/botonEntrenamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:onClick="comenzarEntrenamiento"
+            android:padding="8dp"
+            android:text="Comenzar Entrenamiento"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
