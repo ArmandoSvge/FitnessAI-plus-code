@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorfondo"
     android:orientation="vertical">
 
     <!-- Encabezado de la página -->
@@ -11,9 +12,10 @@
         android:gravity="center"
         android:padding="16dp"
         android:text="FitnessAI+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="24sp" />
 
-    <!-- Contenedor de contenido principal (puedes agregar aquí elementos relacionados con el fitness) -->
+    <!-- Contenedor de contenido principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -43,7 +45,7 @@
             android:layout_height="200dp"
             android:contentDescription="Imagen de entrenamiento"
             android:scaleType="centerCrop"
-            android:src="@drawable/Logo" />
+            android:src="@drawable/logo" />
 
         <!-- Descripción o título de la actividad física -->
         <TextView
@@ -67,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@color/colorGrisBonito"
+        android:background="@color/colorfondo2"
         android:orientation="vertical">
 
         <!-- Vista de chat con la IA (puedes personalizarla con un RecyclerView, por ejemplo) -->

@@ -11,5 +11,9 @@
     <color name="colorbgrChat">#F5F5F5</color>
     <color name="colorbgrChat2">#1C1C1C</color>
     <color name="colorGrisBonito">#D8D8D8</color>
+    <color name="colorfondo2">#ffe0b3</color>
+    <color name="colorfondo">#ffad33</color>
+
+
 
 </resources>
